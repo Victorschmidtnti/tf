@@ -1,0 +1,14 @@
+h2 skapa ny log:
+a href="/gymlog/new" Ny gymlog
+
+- @result.each do |time|
+
+    p Datum:
+    p = time['dag'] 
+    p Övning:
+    p = time['exercises']
+    form method="POST" action="gymlog/#{time['id']}/delete"
+        input type="submit" value="Delete"
+
+
+
