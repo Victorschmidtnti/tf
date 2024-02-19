@@ -7,8 +7,7 @@ require 'bcrypt'
 
 
 enable :sessions
-user-id=1
-user-id = session[:key1]
+
 
 
 get('/')  do
@@ -43,8 +42,38 @@ post('/gymlog/new') do
 end
 
 
+get('/gymlog/:id/edit') do
+    id=params[:id].to_i
+    db = SQLite3::Database.new("db/user.db")
+    db.results_as_hash = true
+    @result = db.execute("SELECT * FROM gymlog WHERE id=?",id).first
+    slim(:"gymlog/edit")
 
+end
 
+post('/gymlog/:id/update') do
+    id=params[:id].to_i
+    dag=params[:dag]
+    exercises=params[:exercises]
+    db = SQLite3::Database.new("db/user.db")
+    db.execute("UPDATE gymlog SET dag=?,exercises=? WHERE id = ?",dag,exercises,id)
+    redirect('/gymlog')
+end
+
+get('/type') do
+    db = SQLite3::Database.new("db/user.db")  
+    db.results_as_hash = true
+    @result = db.execute("SELECT * FROM type")
+    slim(:"type/index2")
+end
+
+get('/index2/:type_off') do
+    db = SQLite3::Database.new("db/user.db")  
+    db.results_as_hash = true
+    type_off=params[:type_off]
+    @result = db.execute("SELECT * FROM exercises WHERE 'type-id'=?",type_off)
+    
+end
 
 
 

@@ -1,0 +1,5 @@
+form action="/gymlog/#{@result['id']}/update" method="post"
+    input type="text" name="dag" value="#{@result['dag']}"
+    input type="text" name="exercises" value="#{@result['exercises']}"
+    input type="hidden" name="id" value="#{@result['id']}"
+    input type="submit" value="Edit it"
