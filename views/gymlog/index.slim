@@ -1,15 +1,17 @@
-h2 skapa ny log:
-a href="/gymlog/new" Ny gymlog
-- @result.each do |time|
+-if session[:role_value]==1
+    h2 skapa ny log:
+    a href="/gymlog/new" Ny gymlog
+    - @result.each do |time|
 
-    p Datum:
-    p = time['dag'] 
-    p Övning:
-    p = time['exercises']
-    a href="gymlog/#{time['id']}/edit" uppdatera
-    form method="POST" action="gymlog/#{time['id']}/delete"
-        input type="submit" value="Delete"
-   
+        p Datum:
+        p = time['dag'] 
+        p Övning:
+        p = time['exercises']
+        a href="gymlog/#{time['id']}/edit" uppdatera
+        form method="POST" action="gymlog/#{time['id']}/delete"
+            input type="submit" value="Delete"
+-else
+    h2 Du är inte inloggad, logga in för att se din gymlog
 
 
 

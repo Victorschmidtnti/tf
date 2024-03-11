@@ -4,7 +4,8 @@ require 'slim'
 require 'sqlite3'
 require 'bcrypt'
 
-
+#fixa behörighet
+#fixa ny relation table mellan log och exerscieses
 
 enable :sessions
 
@@ -14,12 +15,12 @@ get('/')  do
     slim(:start, layout: :login_layout)
 end 
   
-  get('/showlogin') do
+get('/showlogin') do
     slim(:login, layout: :login_layout)
     #slim(:login)
-  end
+end
   
-  post('/login') do
+post('/login') do
     username = params[:username]
     password = params[:password]
     db = SQLite3::Database.new("db/user.db") 
@@ -27,19 +28,27 @@ end
     result = db.execute("SELECT * FROM user WHERE username = ?", username).first
     password_digest = result["password"] # Rättar till variabelnamnet här
     id = result["id"]
+    x = result["role"]
     if BCrypt::Password.new(password_digest) == password # Jämför med det hashade lösenordet
+        session[:user_id] = result["id"]
+       session[:role_value] = x
       redirect('/start_inlogg')
     else
       "Fel lösenord"
     end
-  end
+end
   
-  
-  get('/start_inlogg') do
+get('/guest_log') do
+    session[:user_id] = nil 
+    session[:role_value] = 0 
     slim(:inloggad)
-    end
+end
+get('/start_inlogg') do
+    slim(:inloggad)
+end
+    
   
-  post('/users/new') do
+post('/users/new') do
     username = params[:username]
     password = params[:password]
     password_confirm = params[:password_confirm]
@@ -47,28 +56,32 @@ end
     if (password==password_confirm)
       password_digest = BCrypt::Password.create(password)
       db = SQLite3::Database.new("db/user.db") 
-      role=1
+      if username == "admin" && password == "admin"
+        role = 2 
+        session[:role_value] = 2
+      else
+        session[:role_value] = 1
+        role = 1
+      end
       db.execute("INSERT INTO user (username,password,role) VALUES (?,?,?)",username,password_digest,role)
       redirect('/')
-      #del film 3 börja 
     else
       "Lösenorden matchar inte tyvärr"
     end
   
-  end
+end
 
-  def current_user_id
-    @user_id # Returnerar användarens ID från sessionen
-  end
+
 
 
 
 
 get('/gymlog') do 
+   # p session[:role_value]
+    p "hej"
     db = SQLite3::Database.new("db/user.db")  
     db.results_as_hash = true
-    @user_id = current_user_id
-    @result = db.execute("SELECT * FROM gymlog WHERE \"user-id\" = ?",@user_id)
+    @result = db.execute("SELECT * FROM gymlog WHERE \"user-id\" = ?",session[:user_id])
     
     slim(:"gymlog/index")
 end
@@ -86,11 +99,11 @@ end
 
 post('/gymlog/new') do 
     dag = params[:dag]
-    exercises = params[:exercises].to_i
+    exercises = params[:exercises]
     db = SQLite3::Database.new("db/user.db") 
-    @user_id = current_user_id
-    db.execute("INSERT INTO gymlog (dag, exercises, \"user-id\") VALUES (?,?,?)" ,dag, exercises,@user_id)
+    db.execute("INSERT INTO gymlog (dag, exercises, \"user-id\") VALUES (?,?,?)" ,dag, exercises, session[:user_id])
     redirect('/gymlog')
+  
 end
 
 
