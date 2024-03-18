@@ -4,8 +4,9 @@ require 'slim'
 require 'sqlite3'
 require 'bcrypt'
 
-#fixa behörighet
+#fixa behörighet gör if satser 
 #fixa ny relation table mellan log och exerscieses
+#Gör en reletionstabell med inner join som ser hur många gånger du har gjort en viss muskelgrupp. Inner join med relationtable på gymlog och type
 
 enable :sessions
 
@@ -44,6 +45,7 @@ get('/guest_log') do
     slim(:inloggad)
 end
 get('/start_inlogg') do
+    p session[:role_value]
     slim(:inloggad)
 end
     
@@ -77,8 +79,6 @@ end
 
 
 get('/gymlog') do 
-   # p session[:role_value]
-    p "hej"
     db = SQLite3::Database.new("db/user.db")  
     db.results_as_hash = true
     @result = db.execute("SELECT * FROM gymlog WHERE \"user-id\" = ?",session[:user_id])
@@ -91,6 +91,11 @@ post('/gymlog/:id/delete') do
     db = SQLite3::Database.new("db/user.db")  
     db.execute("DELETE FROM gymlog WHERE id = ?",id)
     redirect('/gymlog')
+end
+
+get('/muscle_count') do
+#kolla här med inner join
+   slim(:"gymlog/count")
 end
 
 get('/gymlog/new') do
@@ -156,13 +161,13 @@ get('/exercises/new') do
   end
   
 
-  post('/exercises/new') do 
+post('/exercises/new') do 
     exercises = params[:exercises]
-    type_id = params[:type_id].to_i # Det valda värdet från dropdown-menyn
+    type_id = params[:"type-id"].to_i 
     db = SQLite3::Database.new("db/user.db") 
     db.execute("INSERT INTO exercises (exercises, \"type-id\") VALUES (?, ?)", exercises, type_id)
     redirect('/type')
-  end
+end
   
 
 get('/exercises/:id/edit') do

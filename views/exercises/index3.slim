@@ -3,7 +3,8 @@ ul
     - @result.each do |time|
         li
              h2 = time['exercises']
-        a href="/exercises/#{time['id']}/edit" uppdatera
-        form method="POST" action="/exercises/#{time['id']}/delete"
-            input type="submit" value="Delete"
+        -if session[:role_value]==2
+            a href="/exercises/#{time['id']}/edit" uppdatera
+            form method="POST" action="/exercises/#{time['id']}/delete"
+             input type="submit" value="Delete"
         
