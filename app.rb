@@ -5,9 +5,8 @@ require 'sqlite3'
 require 'bcrypt'
 
 #fixa behörighet gör if satser 
-#fixa ny relation table mellan log och exerscieses
-#Gör en reletionstabell med inner join som ser hur många gånger du har gjort en viss muskelgrupp. Inner join med relationtable på gymlog och type
-
+#fixa inenr join med user-type där en användare kan välja fler muskelgrupper och en muskelgrupp kan väljas av flera användare.
+#fixa yardoc
 enable :sessions
 
 
@@ -93,10 +92,6 @@ post('/gymlog/:id/delete') do
     redirect('/gymlog')
 end
 
-get('/muscle_count') do
-#kolla här med inner join
-   slim(:"gymlog/count")
-end
 
 get('/gymlog/new') do
     slim(:"gymlog/new") 
