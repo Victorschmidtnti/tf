@@ -10,4 +10,6 @@ html lang="en"
       a href="/" Register
       a href="/showlogin" Login
 
+    - if defined?(@message)
+        p = @message
     == yield
