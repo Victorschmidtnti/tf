@@ -34,7 +34,7 @@ post('/login') do
         @message = "Användarnamnet finns inte"
         return slim(:login, layout: :login_layout)
     end
-    if BCrypt::Password.new(password_digest) == password # Jämför med det hashade lösenordet
+    if BCrypt::Password.new(password_digest) == password 
         session[:user_id] = result["id"]
        session[:role_value] = x
       redirect('/start_inlogg')
