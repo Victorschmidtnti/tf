@@ -184,8 +184,6 @@ post('/gymlog') do
     exercises = params[:exercises]
     db = SQLite3::Database.new("db/user.db") 
     db.execute("INSERT INTO gymlog (dag, exercises, \"user-id\") VALUES (?,?,?)" ,dag, exercises, session[:user_id])
-
-    # Insert into user_gymlog table to associate the new gymlog with the current user
     gymlog_id = db.last_insert_row_id
     db.execute("INSERT INTO user_gymlog (user_id, gymlog_id) VALUES (?, ?)", session[:user_id], gymlog_id)
 

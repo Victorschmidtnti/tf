@@ -127,7 +127,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>Root route for the web application, shows the start page.</p>
+</div></span>
   
 </li>
 
@@ -149,7 +151,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>Shows form for editing exercise.</p>
+</div></span>
   
 </li>
 
@@ -171,7 +175,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>Shows form for creating new exercise.</p>
+</div></span>
   
 </li>
 
@@ -193,7 +199,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>Guest login.</p>
+</div></span>
   
 </li>
 
@@ -215,7 +223,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>Shows list of workout logs for the current user.</p>
+</div></span>
   
 </li>
 
@@ -237,7 +247,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>@<a href="interger">param</a> :id, the id of the gymlog you want to edit.</p>
+</div></span>
   
 </li>
 
@@ -259,7 +271,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>New route to handel creation of new gymlog.</p>
+</div></span>
   
 </li>
 
@@ -281,7 +295,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>Route that shows list of exercises for a musclegroup.</p>
+</div></span>
   
 </li>
 
@@ -303,7 +319,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>Shows the login form.</p>
+</div></span>
   
 </li>
 
@@ -325,7 +343,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>Start after login.</p>
+</div></span>
   
 </li>
 
@@ -347,7 +367,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>Route that shows list of musclegroups.</p>
+</div></span>
   
 </li>
 
@@ -369,7 +391,33 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>Route that shows list of workout users.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="top-level-namespace.html#POST__exercises-instance_method" title="#POST /exercises (instance method)">#<strong>POST /exercises</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Handles creation of new exercise and redirects to ‘/type’.</p>
+</div></span>
   
 </li>
 
@@ -391,7 +439,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>@<a href="interger">param</a> :id, the id for the deleted ecercises.</p>
+</div></span>
   
 </li>
 
@@ -413,7 +463,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>@<a href="string">param</a> exercises, the name of the exercise.</p>
+</div></span>
   
 </li>
 
@@ -421,7 +473,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="top-level-namespace.html#POST__exercises_new-instance_method" title="#POST /exercises/new (instance method)">#<strong>POST /exercises/new</strong>  &#x21d2; Object </a>
+      <a href="top-level-namespace.html#POST__gymlog-instance_method" title="#POST /gymlog (instance method)">#<strong>POST /gymlog</strong>  &#x21d2; Object </a>
     
 
     
@@ -435,7 +487,33 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>Handles creation of new workout log and associating it with the current user and redirects to ‘/gymlog’.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="top-level-namespace.html#POST__gymlog__id_associate-instance_method" title="#POST /gymlog/:id/associate (instance method)">#<strong>POST /gymlog/:id/associate</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>New route to handle associating gymlogs with users redirects to’/gymlog’.</p>
+</div></span>
   
 </li>
 
@@ -457,7 +535,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>@<a href="id">param</a> :id, the id of the gymlog you delete.</p>
+</div></span>
   
 </li>
 
@@ -479,29 +559,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
-  
-</li>
-
-      
-        <li class="public ">
-  <span class="summary_signature">
-    
-      <a href="top-level-namespace.html#POST__gymlog_new-instance_method" title="#POST /gymlog/new (instance method)">#<strong>POST /gymlog/new</strong>  &#x21d2; Object </a>
-    
-
-    
-  </span>
-  
-  
-  
-  
-  
-  
-  
-
-  
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>@<a href="string">param</a> exercises, the exercises you want to change.</p>
+</div></span>
   
 </li>
 
@@ -545,7 +605,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>Handles registration of new users and redirects to  redirect(‘/’) .</p>
+</div></span>
   
 </li>
 
@@ -560,6 +622,11 @@
   
   
   
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="Model.html" title="Model (module)">Model</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Model.html#authenticate_user-class_method" title="Model.authenticate_user (method)">authenticate_user</a></span>, <span class='object_link'><a href="Model.html#create_article-class_method" title="Model.create_article (method)">create_article</a></span>, <span class='object_link'><a href="Model.html#delete_article-class_method" title="Model.delete_article (method)">delete_article</a></span>, <span class='object_link'><a href="Model.html#find_articles-class_method" title="Model.find_articles (method)">find_articles</a></span>, <span class='object_link'><a href="Model.html#get_article-class_method" title="Model.get_article (method)">get_article</a></span>, <span class='object_link'><a href="Model.html#get_user-class_method" title="Model.get_user (method)">get_user</a></span>, <span class='object_link'><a href="Model.html#register_user-class_method" title="Model.register_user (method)">register_user</a></span>, <span class='object_link'><a href="Model.html#update_article-class_method" title="Model.update_article (method)">update_article</a></span></p>
+
 
   <div id="instance_method_details" class="method_details_list">
     <h2>Instance Method Details</h2>
@@ -574,18 +641,31 @@
   
 
   
-</h3><table class="source_code">
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Root route for the web application, shows the start page</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+
+
+</div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-14
-15
-16</pre>
+24
+25
+26</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'app.rb', line 14</span>
+      <pre class="code"><span class="info file"># File 'app.rb', line 24</span>
 
 <span class='id identifier rubyid_get'>get</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>  <span class='kw'>do</span>
     <span class='id identifier rubyid_slim'>slim</span><span class='lparen'>(</span><span class='symbol'>:start</span><span class='comma'>,</span> <span class='label'>layout:</span> <span class='symbol'>:login_layout</span><span class='rparen'>)</span>
@@ -604,22 +684,37 @@
   
 
   
-</h3><table class="source_code">
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Shows form for editing exercise</p>
+
+<p>@<a href="interger">param</a> :id, the id of the exercises</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+
+
+</div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-197
-198
-199
-200
-201
-202
-203</pre>
+332
+333
+334
+335
+336
+337
+338</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'app.rb', line 197</span>
+      <pre class="code"><span class="info file"># File 'app.rb', line 332</span>
 
 <span class='id identifier rubyid_get'>get</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/exercises/:id/edit</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span> <span class='kw'>do</span>
     <span class='id identifier rubyid_id'>id</span><span class='op'>=</span><span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:id</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_to_i'>to_i</span>
@@ -642,23 +737,36 @@
   
 
   
-</h3><table class="source_code">
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Shows form for creating new exercise</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+
+
+</div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-178
-179
-180
-181
-182
-183
-184
-185</pre>
+307
+308
+309
+310
+311
+312
+313
+314</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'app.rb', line 178</span>
+      <pre class="code"><span class="info file"># File 'app.rb', line 307</span>
 
 <span class='id identifier rubyid_get'>get</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/exercises/new</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span> <span class='kw'>do</span>
   <span class='kw'>if</span> <span class='id identifier rubyid_session'>session</span><span class='lbracket'>[</span><span class='symbol'>:role_value</span><span class='rbracket'>]</span><span class='op'>==</span><span class='int'>2</span>
@@ -682,20 +790,33 @@
   
 
   
-</h3><table class="source_code">
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Guest login</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+
+
+</div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-49
-50
-51
-52
-53</pre>
+73
+74
+75
+76
+77</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'app.rb', line 49</span>
+      <pre class="code"><span class="info file"># File 'app.rb', line 73</span>
 
 <span class='id identifier rubyid_get'>get</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/guest_log</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span> <span class='kw'>do</span>
     <span class='id identifier rubyid_session'>session</span><span class='lbracket'>[</span><span class='symbol'>:user_id</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='kw'>nil</span> 
@@ -716,31 +837,46 @@
   
 
   
-</h3><table class="source_code">
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Shows list of workout logs for the current user</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+
+
+</div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-97
-98
-99
-100
-101
-102
-103
-104
-105
-106</pre>
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'app.rb', line 97</span>
+      <pre class="code"><span class="info file"># File 'app.rb', line 201</span>
 
 <span class='id identifier rubyid_get'>get</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/gymlog</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span> <span class='kw'>do</span> 
     <span class='kw'>if</span> <span class='id identifier rubyid_session'>session</span><span class='lbracket'>[</span><span class='symbol'>:role_value</span><span class='rbracket'>]</span><span class='op'>==</span><span class='int'>1</span>    
         <span class='id identifier rubyid_db'>db</span> <span class='op'>=</span> <span class='const'>SQLite3</span><span class='op'>::</span><span class='const'>Database</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>db/user.db</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>  
         <span class='id identifier rubyid_db'>db</span><span class='period'>.</span><span class='id identifier rubyid_results_as_hash'>results_as_hash</span> <span class='op'>=</span> <span class='kw'>true</span>
-        <span class='ivar'>@result</span> <span class='op'>=</span> <span class='id identifier rubyid_db'>db</span><span class='period'>.</span><span class='id identifier rubyid_execute'>execute</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>SELECT * FROM gymlog WHERE \&quot;user-id\&quot; = ?</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span><span class='id identifier rubyid_session'>session</span><span class='lbracket'>[</span><span class='symbol'>:user_id</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+        <span class='comment'># Using INNER JOIN to fetch gymlogs associated with the current user
+</span>        <span class='ivar'>@result</span> <span class='op'>=</span> <span class='id identifier rubyid_db'>db</span><span class='period'>.</span><span class='id identifier rubyid_execute'>execute</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>SELECT g.* FROM gymlog g INNER JOIN user_gymlog ug ON g.id = ug.gymlog_id WHERE ug.user_id = ?</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_session'>session</span><span class='lbracket'>[</span><span class='symbol'>:user_id</span><span class='rbracket'>]</span><span class='rparen'>)</span>
         <span class='id identifier rubyid_slim'>slim</span><span class='lparen'>(</span><span class='symbol'>:&quot;gymlog/index&quot;</span><span class='rparen'>)</span>
     <span class='kw'>else</span>
         <span class='id identifier rubyid_slim'>slim</span><span class='lparen'>(</span><span class='symbol'>:&quot;gymlog/index&quot;</span><span class='rparen'>)</span>
@@ -760,31 +896,42 @@
   
 
   
-</h3><table class="source_code">
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>@<a href="interger">param</a> :id, the id of the gymlog you want to edit</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+
+
+</div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-130
-131
-132
-133
-134
-135
-136
-137</pre>
+225
+226
+227
+228
+229
+230
+231</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'app.rb', line 130</span>
+      <pre class="code"><span class="info file"># File 'app.rb', line 225</span>
 
 <span class='id identifier rubyid_get'>get</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/gymlog/:id/edit</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span> <span class='kw'>do</span>
-    <span class='id identifier rubyid_id'>id</span><span class='op'>=</span><span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:id</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_to_i'>to_i</span>
-    <span class='id identifier rubyid_db'>db</span> <span class='op'>=</span> <span class='const'>SQLite3</span><span class='op'>::</span><span class='const'>Database</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>db/user.db</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
-    <span class='id identifier rubyid_db'>db</span><span class='period'>.</span><span class='id identifier rubyid_results_as_hash'>results_as_hash</span> <span class='op'>=</span> <span class='kw'>true</span>
-    <span class='ivar'>@result</span> <span class='op'>=</span> <span class='id identifier rubyid_db'>db</span><span class='period'>.</span><span class='id identifier rubyid_execute'>execute</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>SELECT * FROM gymlog WHERE id=?</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span><span class='id identifier rubyid_id'>id</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_first'>first</span>
-    <span class='id identifier rubyid_slim'>slim</span><span class='lparen'>(</span><span class='symbol'>:&quot;gymlog/edit&quot;</span><span class='rparen'>)</span>
-
+     <span class='id identifier rubyid_id'>id</span><span class='op'>=</span><span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:id</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_to_i'>to_i</span>
+     <span class='id identifier rubyid_db'>db</span> <span class='op'>=</span> <span class='const'>SQLite3</span><span class='op'>::</span><span class='const'>Database</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>db/user.db</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+     <span class='id identifier rubyid_db'>db</span><span class='period'>.</span><span class='id identifier rubyid_results_as_hash'>results_as_hash</span> <span class='op'>=</span> <span class='kw'>true</span>
+     <span class='ivar'>@result</span> <span class='op'>=</span> <span class='id identifier rubyid_db'>db</span><span class='period'>.</span><span class='id identifier rubyid_execute'>execute</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>SELECT * FROM gymlog WHERE id=?</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span><span class='id identifier rubyid_id'>id</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_first'>first</span>
+     <span class='id identifier rubyid_slim'>slim</span><span class='lparen'>(</span><span class='symbol'>:&quot;gymlog/edit&quot;</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -800,21 +947,34 @@
   
 
   
-</h3><table class="source_code">
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>New route to handel creation of new gymlog</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+
+
+</div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-116
-117
-118</pre>
+196
+197
+198</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'app.rb', line 116</span>
+      <pre class="code"><span class="info file"># File 'app.rb', line 196</span>
 
 <span class='id identifier rubyid_get'>get</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/gymlog/new</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span> <span class='kw'>do</span>
-    <span class='id identifier rubyid_slim'>slim</span><span class='lparen'>(</span><span class='symbol'>:&quot;gymlog/new&quot;</span><span class='rparen'>)</span> 
+   <span class='id identifier rubyid_slim'>slim</span><span class='lparen'>(</span><span class='symbol'>:&quot;gymlog/new&quot;</span><span class='rparen'>)</span> 
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -830,22 +990,35 @@
   
 
   
-</h3><table class="source_code">
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Route that shows list of exercises for a musclegroup</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+
+
+</div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-162
-163
-164
-165
-166
-167
-168</pre>
+288
+289
+290
+291
+292
+293
+294</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'app.rb', line 162</span>
+      <pre class="code"><span class="info file"># File 'app.rb', line 288</span>
 
 <span class='id identifier rubyid_get'>get</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/index2/:type_off</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span> <span class='kw'>do</span>
     <span class='id identifier rubyid_db'>db</span> <span class='op'>=</span> <span class='const'>SQLite3</span><span class='op'>::</span><span class='const'>Database</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>db/user.db</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>  
@@ -868,20 +1041,37 @@
   
 
   
-</h3><table class="source_code">
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Shows the login form</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+
+
+</div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-18
-19
-20</pre>
+29
+30
+31
+32
+33</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'app.rb', line 18</span>
+      <pre class="code"><span class="info file"># File 'app.rb', line 29</span>
 
 <span class='id identifier rubyid_get'>get</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/showlogin</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span> <span class='kw'>do</span>
+    <span class='id identifier rubyid_session'>session</span><span class='lbracket'>[</span><span class='symbol'>:login_attempts</span><span class='rbracket'>]</span> <span class='op'>||=</span> <span class='int'>0</span>
+    <span class='id identifier rubyid_session'>session</span><span class='lbracket'>[</span><span class='symbol'>:last_login_attempt_time</span><span class='rbracket'>]</span> <span class='op'>||=</span> <span class='const'>Time</span><span class='period'>.</span><span class='id identifier rubyid_now'>now</span> <span class='op'>-</span> <span class='int'>61</span>
     <span class='id identifier rubyid_slim'>slim</span><span class='lparen'>(</span><span class='symbol'>:login</span><span class='comma'>,</span> <span class='label'>layout:</span> <span class='symbol'>:login_layout</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
     </td>
@@ -898,18 +1088,31 @@
   
 
   
-</h3><table class="source_code">
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Start after login</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+
+
+</div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-54
-55
-56</pre>
+80
+81
+82</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'app.rb', line 54</span>
+      <pre class="code"><span class="info file"># File 'app.rb', line 80</span>
 
 <span class='id identifier rubyid_get'>get</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/start_inlogg</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span> <span class='kw'>do</span>
     <span class='id identifier rubyid_slim'>slim</span><span class='lparen'>(</span><span class='symbol'>:inloggad</span><span class='rparen'>)</span>
@@ -928,21 +1131,34 @@
   
 
   
-</h3><table class="source_code">
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Route that shows list of musclegroups</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+
+
+</div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-155
-156
-157
-158
-159
-160</pre>
+280
+281
+282
+283
+284
+285</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'app.rb', line 155</span>
+      <pre class="code"><span class="info file"># File 'app.rb', line 280</span>
 
 <span class='id identifier rubyid_get'>get</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/type</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span> <span class='kw'>do</span>
     <span class='id identifier rubyid_db'>db</span> <span class='op'>=</span> <span class='const'>SQLite3</span><span class='op'>::</span><span class='const'>Database</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>db/user.db</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>  
@@ -964,27 +1180,93 @@
   
 
   
-</h3><table class="source_code">
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Route that shows list of workout users</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+
+
+</div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-148
-149
-150
-151
-152
-153</pre>
+272
+273
+274
+275
+276
+277</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'app.rb', line 148</span>
+      <pre class="code"><span class="info file"># File 'app.rb', line 272</span>
 
 <span class='id identifier rubyid_get'>get</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/workout_users</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span> <span class='kw'>do</span>
      <span class='id identifier rubyid_db'>db</span> <span class='op'>=</span> <span class='const'>SQLite3</span><span class='op'>::</span><span class='const'>Database</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>db/user.db</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
      <span class='ivar'>@result</span> <span class='op'>=</span> <span class='id identifier rubyid_db'>db</span><span class='period'>.</span><span class='id identifier rubyid_execute'>execute</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>SELECT username FROM user INNER JOIN gymlog ON user.id = gymlog.\&quot;user-id\&quot;;</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
      <span class='ivar'>@usernames</span> <span class='op'>=</span> <span class='ivar'>@result</span><span class='period'>.</span><span class='id identifier rubyid_map'>map</span><span class='lparen'>(</span><span class='op'>&amp;</span><span class='symbol'>:first</span><span class='rparen'>)</span>
      <span class='id identifier rubyid_slim'>slim</span><span class='lparen'>(</span><span class='symbol'>:&quot;number/index&quot;</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="POST__exercises-instance_method">
+  
+    #<strong>POST /exercises</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Handles creation of new exercise and redirects to ‘/type’</p>
+
+<p>@<a href="interger">params</a> exercises, create new exercise @<a href="interger">param</a> :type_id, the id of what muscle group</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+321
+322
+323
+324
+325
+326
+327</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app.rb', line 321</span>
+
+<span class='id identifier rubyid_post'>post</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/exercises</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span> <span class='kw'>do</span> 
+    <span class='id identifier rubyid_exercises'>exercises</span> <span class='op'>=</span> <span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:exercises</span><span class='rbracket'>]</span>
+    <span class='id identifier rubyid_type_id'>type_id</span> <span class='op'>=</span> <span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:&quot;type-id&quot;</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_to_i'>to_i</span> 
+    <span class='id identifier rubyid_db'>db</span> <span class='op'>=</span> <span class='const'>SQLite3</span><span class='op'>::</span><span class='const'>Database</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>db/user.db</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span> 
+    <span class='id identifier rubyid_db'>db</span><span class='period'>.</span><span class='id identifier rubyid_execute'>execute</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>INSERT INTO exercises (exercises, \&quot;type-id\&quot;) VALUES (?, ?)</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_exercises'>exercises</span><span class='comma'>,</span> <span class='id identifier rubyid_type_id'>type_id</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_redirect'>redirect</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/type</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -1000,21 +1282,34 @@
   
 
   
-</h3><table class="source_code">
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>@<a href="interger">param</a> :id, the id for the deleted ecercises</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+
+
+</div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-170
-171
-172
-173
-174
-175</pre>
+298
+299
+300
+301
+302
+303</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'app.rb', line 170</span>
+      <pre class="code"><span class="info file"># File 'app.rb', line 298</span>
 
 <span class='id identifier rubyid_post'>post</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/exercises/:id/delete</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span> <span class='kw'>do</span>
     <span class='id identifier rubyid_id'>id</span> <span class='op'>=</span> <span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:id</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_to_i'>to_i</span>
@@ -1036,22 +1331,35 @@
   
 
   
-</h3><table class="source_code">
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>@<a href="string">param</a> exercises, the name of the exercise</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+
+
+</div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-205
-206
-207
-208
-209
-210
-211</pre>
+343
+344
+345
+346
+347
+348
+349</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'app.rb', line 205</span>
+      <pre class="code"><span class="info file"># File 'app.rb', line 343</span>
 
 <span class='id identifier rubyid_post'>post</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/exercises/:id/update</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span> <span class='kw'>do</span>
     <span class='id identifier rubyid_id'>id</span><span class='op'>=</span><span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:id</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_to_i'>to_i</span>
@@ -1066,37 +1374,113 @@
 </div>
     
       <div class="method_details ">
-  <h3 class="signature " id="POST__exercises_new-instance_method">
+  <h3 class="signature " id="POST__gymlog-instance_method">
   
-    #<strong>POST /exercises/new</strong>  &#x21d2; <tt>Object</tt> 
-  
-
+    #<strong>POST /gymlog</strong>  &#x21d2; <tt>Object</tt> 
   
 
   
-</h3><table class="source_code">
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Handles creation of new workout log and associating it with the current user and redirects to ‘/gymlog’</p>
+
+<p>@<a href="string">params</a> dag, the day @<a href="string">params</a> exercises, the exercises you have done</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+
+
+</div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
+182
+183
+184
+185
+186
+187
 188
 189
 190
 191
 192
-193
-194</pre>
+193</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'app.rb', line 188</span>
+      <pre class="code"><span class="info file"># File 'app.rb', line 182</span>
 
-<span class='id identifier rubyid_post'>post</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/exercises/new</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span> <span class='kw'>do</span> 
+<span class='id identifier rubyid_post'>post</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/gymlog</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span> <span class='kw'>do</span> 
+    <span class='id identifier rubyid_dag'>dag</span> <span class='op'>=</span> <span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:dag</span><span class='rbracket'>]</span>
     <span class='id identifier rubyid_exercises'>exercises</span> <span class='op'>=</span> <span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:exercises</span><span class='rbracket'>]</span>
-    <span class='id identifier rubyid_type_id'>type_id</span> <span class='op'>=</span> <span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:&quot;type-id&quot;</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_to_i'>to_i</span> 
     <span class='id identifier rubyid_db'>db</span> <span class='op'>=</span> <span class='const'>SQLite3</span><span class='op'>::</span><span class='const'>Database</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>db/user.db</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span> 
-    <span class='id identifier rubyid_db'>db</span><span class='period'>.</span><span class='id identifier rubyid_execute'>execute</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>INSERT INTO exercises (exercises, \&quot;type-id\&quot;) VALUES (?, ?)</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_exercises'>exercises</span><span class='comma'>,</span> <span class='id identifier rubyid_type_id'>type_id</span><span class='rparen'>)</span>
-    <span class='id identifier rubyid_redirect'>redirect</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/type</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_db'>db</span><span class='period'>.</span><span class='id identifier rubyid_execute'>execute</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>INSERT INTO gymlog (dag, exercises, \&quot;user-id\&quot;) VALUES (?,?,?)</span><span class='tstring_end'>&quot;</span></span> <span class='comma'>,</span><span class='id identifier rubyid_dag'>dag</span><span class='comma'>,</span> <span class='id identifier rubyid_exercises'>exercises</span><span class='comma'>,</span> <span class='id identifier rubyid_session'>session</span><span class='lbracket'>[</span><span class='symbol'>:user_id</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+
+    <span class='comment'># Insert into user_gymlog table to associate the new gymlog with the current user
+</span>    <span class='id identifier rubyid_gymlog_id'>gymlog_id</span> <span class='op'>=</span> <span class='id identifier rubyid_db'>db</span><span class='period'>.</span><span class='id identifier rubyid_last_insert_row_id'>last_insert_row_id</span>
+    <span class='id identifier rubyid_db'>db</span><span class='period'>.</span><span class='id identifier rubyid_execute'>execute</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>INSERT INTO user_gymlog (user_id, gymlog_id) VALUES (?, ?)</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_session'>session</span><span class='lbracket'>[</span><span class='symbol'>:user_id</span><span class='rbracket'>]</span><span class='comma'>,</span> <span class='id identifier rubyid_gymlog_id'>gymlog_id</span><span class='rparen'>)</span>
+
+    <span class='id identifier rubyid_redirect'>redirect</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/gymlog</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="POST__gymlog__id_associate-instance_method">
+  
+    #<strong>POST /gymlog/:id/associate</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>New route to handle associating gymlogs with users redirects to’/gymlog’</p>
+
+<p>@<a href="interger">param</a> :id, the id of the relation</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+216
+217
+218
+219
+220
+221</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app.rb', line 216</span>
+
+<span class='id identifier rubyid_post'>post</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/gymlog/:id/associate</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span> <span class='kw'>do</span>
+    <span class='id identifier rubyid_id'>id</span> <span class='op'>=</span> <span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:id</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_to_i'>to_i</span>
+    <span class='id identifier rubyid_db'>db</span> <span class='op'>=</span> <span class='const'>SQLite3</span><span class='op'>::</span><span class='const'>Database</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>db/user.db</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>  
+    <span class='id identifier rubyid_db'>db</span><span class='period'>.</span><span class='id identifier rubyid_execute'>execute</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>INSERT INTO user_gymlog (user_id, gymlog_id) VALUES (?, ?)</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_session'>session</span><span class='lbracket'>[</span><span class='symbol'>:user_id</span><span class='rbracket'>]</span><span class='comma'>,</span> <span class='id identifier rubyid_id'>id</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_redirect'>redirect</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/gymlog</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -1112,27 +1496,50 @@
   
 
   
-</h3><table class="source_code">
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>@<a href="id">param</a> :id, the id of the gymlog you delete</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+
+
+</div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-108
-109
-110
-111
-112
-113</pre>
+254
+255
+256
+257
+258
+259
+260
+261
+262
+263
+264</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'app.rb', line 108</span>
+      <pre class="code"><span class="info file"># File 'app.rb', line 254</span>
 
 <span class='id identifier rubyid_post'>post</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/gymlog/:id/delete</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span> <span class='kw'>do</span>
-    <span class='id identifier rubyid_id'>id</span> <span class='op'>=</span> <span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:id</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_to_i'>to_i</span>
-    <span class='id identifier rubyid_db'>db</span> <span class='op'>=</span> <span class='const'>SQLite3</span><span class='op'>::</span><span class='const'>Database</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>db/user.db</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>  
-    <span class='id identifier rubyid_db'>db</span><span class='period'>.</span><span class='id identifier rubyid_execute'>execute</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>DELETE FROM gymlog WHERE id = ?</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span><span class='id identifier rubyid_id'>id</span><span class='rparen'>)</span>
-    <span class='id identifier rubyid_redirect'>redirect</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/gymlog</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_id'>id</span> <span class='op'>=</span> <span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:id</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_to_i'>to_i</span>
+  <span class='id identifier rubyid_db'>db</span> <span class='op'>=</span> <span class='const'>SQLite3</span><span class='op'>::</span><span class='const'>Database</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>db/user.db</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>  
+  <span class='id identifier rubyid_owner_id_str'>owner_id_str</span> <span class='op'>=</span> <span class='id identifier rubyid_db'>db</span><span class='period'>.</span><span class='id identifier rubyid_execute'>execute</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>SELECT \&quot;user-id\&quot; FROM gymlog WHERE id = ?</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_id'>id</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_first'>first</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span>
+  <span class='id identifier rubyid_owner_id'>owner_id</span> <span class='op'>=</span> <span class='id identifier rubyid_owner_id_str'>owner_id_str</span><span class='period'>.</span><span class='id identifier rubyid_match'>match</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>\d+</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_to_i'>to_i</span> <span class='kw'>if</span> <span class='id identifier rubyid_owner_id_str'>owner_id_str</span>
+  <span class='kw'>if</span> <span class='id identifier rubyid_session'>session</span><span class='lbracket'>[</span><span class='symbol'>:user_id</span><span class='rbracket'>]</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_session'>session</span><span class='lbracket'>[</span><span class='symbol'>:user_id</span><span class='rbracket'>]</span> <span class='op'>==</span> <span class='id identifier rubyid_owner_id'>owner_id</span>
+    <span class='id identifier rubyid_db'>db</span><span class='period'>.</span><span class='id identifier rubyid_execute'>execute</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>DELETE FROM gymlog WHERE id = ?</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_id'>id</span><span class='rparen'>)</span>
+  <span class='kw'>end</span>
+  
+  <span class='id identifier rubyid_redirect'>redirect</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/gymlog</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -1148,71 +1555,56 @@
   
 
   
-</h3><table class="source_code">
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>@<a href="string">param</a> exercises, the exercises you want to change</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+
+
+</div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-139
-140
-141
-142
-143
-144
-145
-146</pre>
+237
+238
+239
+240
+241
+242
+243
+244
+245
+246
+247
+248
+249
+250</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'app.rb', line 139</span>
+      <pre class="code"><span class="info file"># File 'app.rb', line 237</span>
 
 <span class='id identifier rubyid_post'>post</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/gymlog/:id/update</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span> <span class='kw'>do</span>
-    <span class='id identifier rubyid_id'>id</span><span class='op'>=</span><span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:id</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_to_i'>to_i</span>
-    <span class='id identifier rubyid_dag'>dag</span><span class='op'>=</span><span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:dag</span><span class='rbracket'>]</span>
-    <span class='id identifier rubyid_exercises'>exercises</span><span class='op'>=</span><span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:exercises</span><span class='rbracket'>]</span>
-    <span class='id identifier rubyid_db'>db</span> <span class='op'>=</span> <span class='const'>SQLite3</span><span class='op'>::</span><span class='const'>Database</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>db/user.db</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
-    <span class='id identifier rubyid_db'>db</span><span class='period'>.</span><span class='id identifier rubyid_execute'>execute</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>UPDATE gymlog SET dag=?,exercises=? WHERE id = ?</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span><span class='id identifier rubyid_dag'>dag</span><span class='comma'>,</span><span class='id identifier rubyid_exercises'>exercises</span><span class='comma'>,</span><span class='id identifier rubyid_id'>id</span><span class='rparen'>)</span>
-    <span class='id identifier rubyid_redirect'>redirect</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/gymlog</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
-<span class='kw'>end</span></pre>
-    </td>
-  </tr>
-</table>
-</div>
-    
-      <div class="method_details ">
-  <h3 class="signature " id="POST__gymlog_new-instance_method">
-  
-    #<strong>POST /gymlog/new</strong>  &#x21d2; <tt>Object</tt> 
-  
-
-  
-
-  
-</h3><table class="source_code">
-  <tr>
-    <td>
-      <pre class="lines">
-
-
-120
-121
-122
-123
-124
-125
-126
-127</pre>
-    </td>
-    <td>
-      <pre class="code"><span class="info file"># File 'app.rb', line 120</span>
-
-<span class='id identifier rubyid_post'>post</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/gymlog/new</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span> <span class='kw'>do</span> 
-    <span class='id identifier rubyid_dag'>dag</span> <span class='op'>=</span> <span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:dag</span><span class='rbracket'>]</span>
-    <span class='id identifier rubyid_exercises'>exercises</span> <span class='op'>=</span> <span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:exercises</span><span class='rbracket'>]</span>
-    <span class='id identifier rubyid_db'>db</span> <span class='op'>=</span> <span class='const'>SQLite3</span><span class='op'>::</span><span class='const'>Database</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>db/user.db</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span> 
-    <span class='id identifier rubyid_db'>db</span><span class='period'>.</span><span class='id identifier rubyid_execute'>execute</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>INSERT INTO gymlog (dag, exercises, \&quot;user-id\&quot;) VALUES (?,?,?)</span><span class='tstring_end'>&quot;</span></span> <span class='comma'>,</span><span class='id identifier rubyid_dag'>dag</span><span class='comma'>,</span> <span class='id identifier rubyid_exercises'>exercises</span><span class='comma'>,</span> <span class='id identifier rubyid_session'>session</span><span class='lbracket'>[</span><span class='symbol'>:user_id</span><span class='rbracket'>]</span><span class='rparen'>)</span>
-    <span class='id identifier rubyid_redirect'>redirect</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/gymlog</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
-  
+         <span class='id identifier rubyid_id'>id</span><span class='op'>=</span><span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:id</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_to_i'>to_i</span>
+         <span class='id identifier rubyid_dag'>dag</span><span class='op'>=</span><span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:dag</span><span class='rbracket'>]</span>
+         <span class='id identifier rubyid_exercises'>exercises</span><span class='op'>=</span><span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:exercises</span><span class='rbracket'>]</span>
+         <span class='id identifier rubyid_db'>db</span> <span class='op'>=</span> <span class='const'>SQLite3</span><span class='op'>::</span><span class='const'>Database</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>db/user.db</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+         <span class='id identifier rubyid_owner_id_str'>owner_id_str</span> <span class='op'>=</span> <span class='id identifier rubyid_db'>db</span><span class='period'>.</span><span class='id identifier rubyid_execute'>execute</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>SELECT \&quot;user-id\&quot; FROM gymlog WHERE id = ?</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_id'>id</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_first'>first</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span>
+         <span class='id identifier rubyid_owner_id'>owner_id</span> <span class='op'>=</span> <span class='id identifier rubyid_owner_id_str'>owner_id_str</span><span class='period'>.</span><span class='id identifier rubyid_match'>match</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>\d+</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_to_i'>to_i</span> <span class='kw'>if</span> <span class='id identifier rubyid_owner_id_str'>owner_id_str</span>
+        <span class='kw'>if</span> <span class='id identifier rubyid_session'>session</span><span class='lbracket'>[</span><span class='symbol'>:user_id</span><span class='rbracket'>]</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_session'>session</span><span class='lbracket'>[</span><span class='symbol'>:user_id</span><span class='rbracket'>]</span> <span class='op'>==</span> <span class='id identifier rubyid_owner_id'>owner_id</span>
+            <span class='id identifier rubyid_db'>db</span><span class='period'>.</span><span class='id identifier rubyid_execute'>execute</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>UPDATE gymlog SET dag=?,exercises=? WHERE id = ?</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span><span class='id identifier rubyid_dag'>dag</span><span class='comma'>,</span><span class='id identifier rubyid_exercises'>exercises</span><span class='comma'>,</span><span class='id identifier rubyid_id'>id</span><span class='rparen'>)</span>
+        <span class='kw'>end</span>
+          
+          <span class='id identifier rubyid_redirect'>redirect</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/gymlog</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>      
+        
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -1228,29 +1620,43 @@
   
 
   
-</h3><table class="source_code">
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>password,</span>
+      
+      
+        <span class='type'>(<tt>string</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the users password</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+
+
+</div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
 39
 40
 41
@@ -1259,14 +1665,43 @@
 44
 45
 46
-47</pre>
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'app.rb', line 22</span>
+      <pre class="code"><span class="info file"># File 'app.rb', line 39</span>
 
 <span class='id identifier rubyid_post'>post</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/login</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span> <span class='kw'>do</span>
     <span class='id identifier rubyid_username'>username</span> <span class='op'>=</span> <span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:username</span><span class='rbracket'>]</span>
     <span class='id identifier rubyid_password'>password</span> <span class='op'>=</span> <span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:password</span><span class='rbracket'>]</span>
+    <span class='kw'>if</span> <span class='const'>Time</span><span class='period'>.</span><span class='id identifier rubyid_now'>now</span> <span class='op'>-</span> <span class='id identifier rubyid_session'>session</span><span class='lbracket'>[</span><span class='symbol'>:last_login_attempt_time</span><span class='rbracket'>]</span> <span class='op'>&lt;</span> <span class='int'>60</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_session'>session</span><span class='lbracket'>[</span><span class='symbol'>:login_attempts</span><span class='rbracket'>]</span> <span class='op'>&gt;=</span> <span class='int'>3</span>
+        <span class='ivar'>@message</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>För många inloggningsförsök. Vänligen försök igen om en minut.</span><span class='tstring_end'>&quot;</span></span>
+        <span class='kw'>return</span> <span class='id identifier rubyid_slim'>slim</span><span class='lparen'>(</span><span class='symbol'>:login</span><span class='comma'>,</span> <span class='label'>layout:</span> <span class='symbol'>:login_layout</span><span class='rparen'>)</span>
+    <span class='kw'>end</span>
+      <span class='id identifier rubyid_session'>session</span><span class='lbracket'>[</span><span class='symbol'>:login_attempts</span><span class='rbracket'>]</span> <span class='op'>+=</span> <span class='int'>1</span>
+      <span class='id identifier rubyid_session'>session</span><span class='lbracket'>[</span><span class='symbol'>:last_login_attempt_time</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='const'>Time</span><span class='period'>.</span><span class='id identifier rubyid_now'>now</span>
     <span class='kw'>if</span> <span class='id identifier rubyid_username'>username</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span> <span class='op'>||</span> <span class='id identifier rubyid_username'>username</span><span class='period'>.</span><span class='id identifier rubyid_empty?'>empty?</span> <span class='op'>||</span> <span class='id identifier rubyid_password'>password</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span> <span class='op'>||</span> <span class='id identifier rubyid_password'>password</span><span class='period'>.</span><span class='id identifier rubyid_empty?'>empty?</span>
         <span class='ivar'>@message</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Användarnamn och lösenord måste anges</span><span class='tstring_end'>&quot;</span></span>
         <span class='kw'>return</span> <span class='id identifier rubyid_slim'>slim</span><span class='lparen'>(</span><span class='symbol'>:login</span><span class='comma'>,</span> <span class='label'>layout:</span> <span class='symbol'>:login_layout</span><span class='rparen'>)</span>
@@ -1274,15 +1709,15 @@
     <span class='id identifier rubyid_db'>db</span> <span class='op'>=</span> <span class='const'>SQLite3</span><span class='op'>::</span><span class='const'>Database</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>db/user.db</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span> 
     <span class='id identifier rubyid_db'>db</span><span class='period'>.</span><span class='id identifier rubyid_results_as_hash'>results_as_hash</span> <span class='op'>=</span> <span class='kw'>true</span>
     <span class='id identifier rubyid_result'>result</span> <span class='op'>=</span> <span class='id identifier rubyid_db'>db</span><span class='period'>.</span><span class='id identifier rubyid_execute'>execute</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>SELECT * FROM user WHERE username = ?</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_username'>username</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_first'>first</span>
-    <span class='id identifier rubyid_password_digest'>password_digest</span> <span class='op'>=</span> <span class='id identifier rubyid_result'>result</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>password</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span> 
-    <span class='id identifier rubyid_id'>id</span> <span class='op'>=</span> <span class='id identifier rubyid_result'>result</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>id</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
-    <span class='id identifier rubyid_x'>x</span> <span class='op'>=</span> <span class='id identifier rubyid_result'>result</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>role</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
     <span class='kw'>if</span> <span class='id identifier rubyid_result'>result</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
         <span class='ivar'>@message</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Användarnamnet finns inte</span><span class='tstring_end'>&quot;</span></span>
         <span class='kw'>return</span> <span class='id identifier rubyid_slim'>slim</span><span class='lparen'>(</span><span class='symbol'>:login</span><span class='comma'>,</span> <span class='label'>layout:</span> <span class='symbol'>:login_layout</span><span class='rparen'>)</span>
     <span class='kw'>end</span>
-    <span class='kw'>if</span> <span class='const'>BCrypt</span><span class='op'>::</span><span class='const'>Password</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='id identifier rubyid_password_digest'>password_digest</span><span class='rparen'>)</span> <span class='op'>==</span> <span class='id identifier rubyid_password'>password</span> <span class='comment'># Jämför med det hashade lösenordet
-</span>        <span class='id identifier rubyid_session'>session</span><span class='lbracket'>[</span><span class='symbol'>:user_id</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_result'>result</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>id</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+    <span class='id identifier rubyid_password_digest'>password_digest</span> <span class='op'>=</span> <span class='id identifier rubyid_result'>result</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>password</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span> 
+    <span class='id identifier rubyid_id'>id</span> <span class='op'>=</span> <span class='id identifier rubyid_result'>result</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>id</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+    <span class='id identifier rubyid_x'>x</span> <span class='op'>=</span> <span class='id identifier rubyid_result'>result</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>role</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+    <span class='kw'>if</span> <span class='const'>BCrypt</span><span class='op'>::</span><span class='const'>Password</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='id identifier rubyid_password_digest'>password_digest</span><span class='rparen'>)</span> <span class='op'>==</span> <span class='id identifier rubyid_password'>password</span> 
+        <span class='id identifier rubyid_session'>session</span><span class='lbracket'>[</span><span class='symbol'>:user_id</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_result'>result</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>id</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
        <span class='id identifier rubyid_session'>session</span><span class='lbracket'>[</span><span class='symbol'>:role_value</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_x'>x</span>
       <span class='id identifier rubyid_redirect'>redirect</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/start_inlogg</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
     <span class='kw'>else</span>
@@ -1304,47 +1739,82 @@
   
 
   
-</h3><table class="source_code">
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Handles registration of new users and redirects to  redirect(‘/’) </p>
+
+<p>@<a href="string">params</a> username, the name of the user @<a href="string">params</a> password, the users password</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>repeat-password,</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The repeated password</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+
+
+</div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-59
-60
-61
-62
-63
-64
-65
-66
-67
-68
-69
-70
-71
-72
-73
-74
-75
-76
-77
-78
-79
-80
-81
-82
-83
-84
-85
-86
-87
-88
 89
-90</pre>
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'app.rb', line 59</span>
+      <pre class="code"><span class="info file"># File 'app.rb', line 89</span>
 
 <span class='id identifier rubyid_post'>post</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/users/new</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span> <span class='kw'>do</span>
     <span class='id identifier rubyid_username'>username</span> <span class='op'>=</span> <span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:username</span><span class='rbracket'>]</span>
@@ -1388,7 +1858,7 @@
 </div>
 
       <div id="footer">
-  Generated on Mon Apr  8 18:51:11 2024 by
+  Generated on Mon Apr 29 12:41:33 2024 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.36 (ruby-3.2.2).
 </div>
